@@ -1,0 +1,90 @@
+/* setting images width and  height to  a 100% w.r.t container*/
+#main-header img, .logo img, #main img{
+    height: 100%;
+    width: 100%;
+}
+/* width of each nav-item (home , main-img, work,contact)items to each 25% width of the container */
+.nav-item
+{
+    width:25%;
+}
+
+/* main section height  */
+#main{
+    height:20rem;
+}
+
+/* card customization */
+.card{
+    border: none;
+}
+.card-img-top{
+    height: 300px;    
+}
+.card img{
+    padding:2rem;
+}
+
+/* custom colors */
+.bg-custom-darkgrey{
+    background-color: #2d3c49;
+}
+.text-custom-darkgrey{
+    color: #2d3c49;
+}
+
+.text-custom-lightgrey{
+    color: #7d97ad;
+}
+.bg-custom-lightgrey{
+    background-color: #7d97ad;
+}
+.text-custom-blue{
+    color:#02b3e4;
+}
+.bg-custom-blue{
+    background-color:#02b3e4;
+}
+
+hr{
+    color:#2d3c49;
+}
+
+/* 
+*Media Queries
+*/
+
+
+/* media query to set padding to card-images for medium size screen to zero for responsiveness */
+@media only screen and (max-width: 992px){
+    .card img{        
+        padding:1rem;
+        height:60%;
+        margin-bottom: 0;
+    }
+    .work-section{
+        margin-bottom:0;
+        border: 1px solid #dee2e6;
+    }    
+    }
+
+/* media qury for improving resposiveness of nav-bar */
+@media only screen and (max-width: 500px){
+    /* reduce font-size of name when screen size reduces */
+    #name{
+        font-size: 2.5rem;
+        padding-bottom: 1rem;
+    }
+    header #name-row{
+        padding-top: 3rem;
+    }
+    #main-nav{
+        align-items: stretch;
+        box-sizing: border-box;
+        flex-direction: column !important;
+    }
+    .nav-item{
+        width:100%;
+        padding: 1rem;
+    }
+}
